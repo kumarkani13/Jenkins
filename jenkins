@@ -1,28 +1,21 @@
-pipeline
-{
-agent any
-stages
-{
-stage("Build")
-{
-Steps
-{
-echo 'Building the java applications'
-}
-}
-stage("Test")
-{
-Steps
-{
-echo 'Testing the java applications'
-}
-}
-stage("Deploy")
-{
-Steps
-{
-echo 'Deploying the java applications'
-}
-}
-}
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
