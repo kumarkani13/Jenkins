@@ -3,25 +3,25 @@ pipeline
 agent any
 stages
 {
-stage ('Build')
+stage("Build")
 {
 Steps
 {
-echo ("Building the java applications")
+echo 'Building the java applications'
 }
 }
-stage ('Test')
+stage("Test")
 {
 Steps
 {
-echo ("Testing the java applications")
+echo 'Testing the java applications'
 }
 }
-stage ('Deploy')
+stage("Deploy")
 {
 Steps
 {
-echo ("Deploying the java applications")
+echo 'Deploying the java applications'
 }
 }
 }
